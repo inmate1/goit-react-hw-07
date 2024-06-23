@@ -15,8 +15,7 @@ function App() {
   const contacts = useSelector(selectFilteredContacts);
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
-  console.log(selectIsLoading);
-
+  
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchContacts());
